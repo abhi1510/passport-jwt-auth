@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="row">
+    <p style="margin-bottom: 50px"></p>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="well">
+        <h2 class="text-center">Welcome {{profile.username}}</h2>
+        <h3>Your details are:</h3>
+        <h4>Email: {{profile.email}}</h4>
+        <h4>Date of birth: {{profile.dob | date}}</h4>
+        <h4>Status: {{profile.status}}</h4> <br>
+        <button type="button" class="btn btn-primary" ng-click="goHome()">Go Home</button>
+        <button type="button" class="btn btn-primary" ng-click="updateUserProfile()">Update</button>        
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
